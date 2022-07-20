@@ -1,0 +1,295 @@
+/* Common Style */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #161616;
+
+}
+
+.container {
+    margin: 0px 140px;
+    display: flex;
+    justify-content: center;
+}
+
+/*----------
+     ShowCase Section
+----------------------- */
+.showCase {
+
+    background: url(../assets/banner-backgroundwebp.webp) #00161a;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.showCase-text {
+    width: 50%;
+    margin: 111px 24px 111px 106px;
+}
+
+.showCase-text h1 {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 700;
+}
+
+.showCase-text p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 45px;
+
+}
+.btn {
+    background-color: orange;
+    padding: 15px 35px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+.btn a{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+}
+
+
+.showCase-image {
+    width: 40%;
+    margin: 33px 0px 0px 0px;
+    animation-name: player-change;  
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.showCase img {
+    width: 100%;
+    display: none;
+
+}
+
+/*----------
+     Middle Section
+----------------------- */
+
+/* NavBar */
+
+.middle-section {
+    display: flex;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.navBar {
+    width: 250px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #161616;
+    border-radius: 10px;
+    margin-right: 24px;
+}
+
+.nav-item {
+    width: 220px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    margin: 15px;
+
+}
+
+.nav-item:hover {
+    border: 1px solid orange;
+}
+
+.nav-blog-item {
+    background: orange;
+}
+
+.nav-btn {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    color: #161616;
+    text-transform: capitalize;
+}
+
+
+/* Blogs */
+#blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.blog-item {
+    width: 250px;
+    height: 360px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.blog-thumbnail img {
+    width: 100%;
+}
+
+.blog-details {
+    padding: 20px;
+}
+
+.blog-categories a {
+    text-decoration: none;
+    color: #161616;
+    padding: 4px 16px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+}
+
+.blog-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.blog-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.all-icon {
+    font-size: 20px;
+    color: orange;
+}
+
+.heart-icon {
+    color: orangered;
+}
+
+/* Footer */
+footer {
+    background: #000;
+}
+
+.footer-container {
+    padding: 50px 0px;
+}
+
+.site-title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.football {
+    font-size: 55px;
+    color: orange;
+}
+
+hr {
+    color: orange;
+}
+.footer-menus-sec {
+    margin: 50px auto;
+}
+.footer-menus-sec ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-menus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-menu-item {
+    margin-left: 30px;
+}
+.footer-menu-item a {
+    color: #B9B9B9;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+}
+.social-icon a{
+    text-decoration: none;
+    text-align: center;
+    color: orange;
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+/* Bonus Button */
+.bonus {
+   
+    justify-content: center;
+    margin-bottom: 40px;
+    display: none;
+
+}
+.bonus a {
+    text-align: center;
+    padding: 20px 40px;
+    background: orange;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000;
+    border-radius: 10px;
+}
+
+/* Animation */
+
+@keyframes player-change {
+    25% {
+   
+            background-image: url(../assets/messi.png);
+            background-size:cover;
+            background-repeat: no-repeat;
+            
+        
+    }
+    50% {
+
+            background-image: url(../assets/ronaldo.png);
+            background-size:cover;
+            background-repeat: no-repeat;
+        
+    }
+    100% {
+
+            background-image: url(../assets/neymar.png);
+            background-size:cover;
+            background-repeat: no-repeat;
+        
+    }
+}

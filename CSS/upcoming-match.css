@@ -1,0 +1,43 @@
+/* UpComing Match Section */
+#upcoming-match{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.match-card {
+    width: 240px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.country-flag {
+    display: flex;
+    justify-content: center;
+}
+
+.country-one,
+.country-two {
+    width: 70px;
+}
+
+.country-flag img {
+    width: 100%;
+}
+
+.country-flag p {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0px 15px;
+}
+
+.match-info p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+    margin-bottom: 0px;
+}
